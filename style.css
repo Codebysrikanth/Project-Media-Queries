@@ -1,0 +1,326 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+}
+
+
+.navContainer{
+    background-color: steelblue;
+    display: flex;
+    font-size: 1.8rem;
+    gap: 5px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    
+}
+.linksContainer{
+    display: flex;
+    gap: 10px;
+}
+.linksContainer>.links{
+    letter-spacing: 3px;
+    color: white;
+}
+.homeContainer{
+   background-color: rgb(254, 254, 254);
+}
+.homeContainer,.linksContainer{
+    padding: 10px;
+}
+.homeContainer:hover{
+    background-color: rgb(209, 211, 212);
+    cursor: pointer;
+}
+
+.links:hover{
+    background-color: steelblue;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mainContainer{
+    font-family:'Times New Roman', Times, serif;
+    background-color:steelblue;
+    width: 100%;
+    height: 70%;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 120px;
+}
+.textContainer>p:nth-child(1){
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    letter-spacing: 10px;
+}
+.textContainer>p:nth-child(2){
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+.textContainer>.button>button{
+    background-color: rgb(254, 252, 252);
+    color: rgb(10, 10, 10);
+    padding: 18px;
+    width: 180px;
+    font-size: 1.2rem;
+    border: 0 solid;
+    transition: 0.8s ease;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button>button:hover{
+    background-color: lightgray;
+    color: white;
+}
+.anchorContainer1{
+    width: 100%;
+    /* font-family: "Cookie", cursive; */
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+}
+.loremContainer1{
+    width: 50%;
+}
+
+.iconContainer1>.fa{
+    font-size: 12.5rem;
+    color: red;
+    padding: 50px;
+}
+.loremContainer1>p:nth-child(1){
+    font-size: 3.5rem;
+    padding: 50px 0px;
+   
+}
+.loremContainer1>p:nth-child(2){
+    padding: 50px 0px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: justify; 
+}
+.loremContainer1>p:nth-child(3){
+    color: rgb(26, 170, 122);
+    text-align:justify;
+    font-size: 1rem;
+}
+.iconContainer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.anchorContainer2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px;
+    background-color: lightgray;
+}
+.loremContainer2{
+    width: 50%;
+}
+
+.iconContainer2>.fa{
+    font-size: 12.5rem;
+    color: red;
+    padding: 50px;
+}
+.loremContainer2>p:nth-child(1){
+    font-size: 3.5rem;
+    padding: 50px 0px;
+   
+}
+.loremContainer2>p:nth-child(2){
+    padding: 50px 0px;
+    font-weight: 700;
+    text-align: justify; 
+}
+.loremContainer2>p:nth-child(3){
+    color: rgb(26, 170, 122);
+    text-align:justify;
+    padding: 0px 0px 100px 0px;
+}
+.iconContainer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quoteContainer{
+    background-color: gray;
+    width: 100%;
+    padding: 60px;
+    color: white;
+    text-align: center;
+    
+}
+
+
+.quoteContainer>p{
+    font-size: 1.2rem;
+}
+.footerContainer{
+    width: 100%;
+    padding: 55px;
+    text-align: center;
+    line-height: 80px;
+}
+.footerContainer>.fa{
+    font-size: 2rem;
+    transition: 0.8s ease;
+    letter-spacing: 5px;
+    
+}
+
+.fa-instagram:hover{
+    color: rgb(245, 3, 152);
+    cursor: pointer;
+    font-size: 2.3rem;
+}
+
+.fa-google:hover{
+    color: rgb(2, 2, 249);
+    cursor: pointer;
+    font-size: 2.3rem;
+}
+
+.fa-snapchat:hover{
+    color: yellow;
+    cursor: pointer;
+    font-size: 2.3rem;
+}
+
+.fa-pinterest:hover{
+    color: red;
+    cursor: pointer;
+    font-size: 2.3rem;
+}
+
+.fa-twitter:hover{
+    color: rgb(4, 181, 252);
+    cursor: pointer;
+    font-size: 2.3rem;
+}
+
+.menu{
+    display: none;
+}
+
+
+@media screen and (max-width:400px) {
+    .linksContainer>.links{
+        display:none ;
+    }
+    .menu{
+        font-size: 3rem;
+        display: inline-block;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        
+    }
+    .textContainer{
+        line-height: 80px;
+        
+    }
+    .textContainer>p:nth-child(1){
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+    .textContainer>p:nth-child(2){
+        font-size: 1rem;
+    }
+    .textContainer>.button>button{
+        padding: 5px;
+        width: 100px;
+    }
+    .anchorContainer1{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0px;
+    }
+    
+    .loremContainer1>p:nth-child(1){
+        padding: 10px 0px;
+    }
+    .loremContainer1>p:nth-child(2){
+        padding: 10px 0px;
+    }
+    .iconContainer1>.fa{
+        font-size: 10rem;
+    }
+    .anchorContainer2{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .loremContainer2>p:nth-child(1){
+        padding: 10px 0px;
+    }
+    .loremContainer2>p:nth-child(2){
+        padding: 10px 0px;
+    }
+    .iconContainer2>.fa{
+        font-size: 10rem;
+    }
+    .home-container{
+        font-size: 1.5rem;
+    }
+
+    .fa-twitter{
+        color: rgb(2, 180, 250)
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .textContainer{
+        height: 60%;
+        line-height: 2;
+    }
+
+    .textContainer>p:nth-child(2){
+        line-height: 2;
+        font-size: 1.5em;
+        margin: 10px;
+    }
+
+    .button{
+        margin-top: 30px;
+    }
+
+    .textContainer>.button>button{
+        background-color: rgb(252, 4, 82);
+        color: white;
+    }
+
+    .textContainer>.button>button:hover{
+        background-color: steelblue;
+        color: white;
+    }
+
+    /* button:hover{
+        
+    } */
+}
